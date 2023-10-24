@@ -40,6 +40,9 @@ namespace _3_Lags_Arkitektur
             Car emp = new Car(7, NameToAdd.Text);
             emp.ModelYear = int.Parse(Years.Text);
             bll.AddCar(emp);
+            Navn.Content = emp.Name;
+            YearsEmployed.Content = emp.ModelYear;
         }
+
     }
 }
